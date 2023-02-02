@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Demo</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h4>To-Do List</h4>
+        <div class="sortBtn"><button class="sort">⇅</button></div>
+        <div class="inputs">
+
+            <div class="inputs__item" ondragstart="drag(event)" draggable="true">
+                <button class="done">✔</button>
+                <input type="text" class="inpt" />
+                <button class="sil">x</button>
+            </div>
+        </div>
+        <div class="buttonlar">
+            <div class="plus"> + </div>
+            <button class="add-btn">Add</button>
+        </div>
+    </div>
+    <div class="board" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h4>Completed tasks</h4>
+    </div>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
